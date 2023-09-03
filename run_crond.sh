@@ -7,7 +7,6 @@ CRONTAB_BAK_FILE=/etc/crontab.bak
 CRONTAB_FILE=/etc/crontab
 
 CRON_STR=$(cat $CRON_FILE)
-#CRON_STR="*/1 * * * * root python /app/main.py > /proc/1/fd/1 2>/proc/1/fd/2"
 
 echo "=========="
 echo "Welcome to run_crond.sh, a wrapper to $CRON_STR that loads the container environment variables into the cron shell"

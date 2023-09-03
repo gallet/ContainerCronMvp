@@ -9,7 +9,7 @@ RUN apt-get update && apt-get -y install cron -y -qq
 
 COPY cron /tmp/cron
 COPY run_cron.sh run_cron.sh
-RUN chmod +x run_crond.sh
+RUN chmod +x run_cron.sh
 
 # Copy your Python script into the container
 COPY main.py /app/main.py
